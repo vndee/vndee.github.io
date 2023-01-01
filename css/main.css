@@ -22,40 +22,6 @@
 /*----------- Globals -----------*/
 /* Disable outline */
 
-.carousel {
-  width: 400px;
-  height: 500px;
-  overflow: hidden;
-  margin: 0 auto;
-  position: relative;
-}
-
-.carousel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  display: none;
-  transition: opacity 1;
-  animation: fade-in-right 1s forwards;
-}
-
-@keyframes fade-in-right {
-  from { left: 100%; }
-  to { left: 0; }
-}
-
-.carousel img.active {
-  animation: fade-out-left 1s forwards;
-}
-
-@keyframes fade-out-left {
-  from { left: 0; }
-  to { left: -100%; }
-}
-
 :focus {
   outline: none;
 }
@@ -1040,7 +1006,20 @@ hr {
 .info-section .info-img img {
   background-color: transparent;
   border-color: rgba(0, 0, 0, 0.18);
-  width: 430px;
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  position: relative;
+  /* top: 0;
+  right: 100%; */
+  opacity: 1;
+  margin: 0 auto;
+  /* transition: opacity 3s; */
+  /* animation: fade-in-right 1s forwards; */
+}
+
+.info-section .info-img img.visible {
+  opacity: 1;
 }
 
 .info-section .info-content .content-subtitle {
@@ -1159,7 +1138,7 @@ hr {
     border-radius: 50%;
     display: block;
     height: 250px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
     object-fit: cover;
     width: 250px;
   }

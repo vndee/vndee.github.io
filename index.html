@@ -87,7 +87,7 @@
     </div>
   </section>
   <!-- About lightbox-->
-  <div class="lightbox-wrapper" style="overflow: hidden" id="about" data-simplebar>
+  <div class="lightbox-wrapper" id="about" data-simplebar>
     <div class="container">
       <div class="lightbox-close">
         <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
@@ -108,31 +108,28 @@
             <div class="info-section single-section">
               <div class="row align-items-center">
                 <!-- Picture part-->
-                <!-- <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/info-img.jpg" alt="About Picture"></div> -->
-                <div class="col-12 col-lg-5 info-img">
-                <div class="carousel">
-                  <img class="img-fluid img-thumbnail" src="img/info-img-1.jpg" alt="Image 1">
-                  <img class="img-fluid img-thumbnail" src="img/info-img-2.jpg" alt="Image 2">
-                  <img class="img-fluid img-thumbnail" src="img/info-img-3.jpg" alt="Image 3">
-                </div>
+                <!-- <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/info-img-1.jpg" alt="About Picture"></div> -->
+                <!-- <div class="col-12 col-lg-5 info-img"> -->
+                <div class="col-12 col-lg-5 info-img" style="display: none;"><img class="img-fluid img-thumbnail" src="img/info-img-1.jpg" alt="Image 1"></div>
+                <div class="col-12 col-lg-5 info-img" style="display: none;"><img class="img-fluid img-thumbnail" src="img/info-img-2.jpg" alt="Image 2"></div>
+                <div class="col-12 col-lg-5 info-img" style="display: none;"><img class="img-fluid img-thumbnail" src="img/info-img-3.jpg" alt="Image 3"></div>
                 <script>
-                  var carousel = document.querySelector('.carousel');
-                  var images = carousel.querySelectorAll('img');
+                  // var carousel = document.querySelector('.carousel');
+                  var images = document.querySelectorAll('.col-12.col-lg-5.info-img');
                   var current = 0;
                   
                   function next() {
-                    // images[current].classList.remove('active');
+                    // images[current].classList.remove('visible');
                     images[current].style.display = 'none';
-                    images[current].style.opacity = 0;
+                    // images[current].style.opacity = 0;
                     current = (current + 1) % images.length;
-                    // images[current].classList.add('active');
+                    // images[current].classList.add('visible');
                     images[current].style.display = 'block';
-                    images[current].style.opacity = 1;
+                    // images[current].style.opacity = 1;
                   }
                   
                   setInterval(next, 3000);
                   </script>
-              </div>
                 <!-- Content part-->
                 <div class="col-12 col-lg-7 info-content">
                   <div class="content-block">
