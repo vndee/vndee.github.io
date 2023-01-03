@@ -49,7 +49,7 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="https://blog.duy-huynh.com" target="_blank">Blog</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -177,6 +177,7 @@
   </div>
   <!-- Portfolio lightbox-->
   <div class="lightbox-wrapper" id="portfolio" data-simplebar>
+    <script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js"></script>
     <div class="container">
       <div class="lightbox-close">
         <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
@@ -187,7 +188,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-heading page-heading">
-                  <p class="section-description">Showcasing some of my best work</p>
+                  <p class="section-description">Some of my open-source projects</p>
                   <h2 class="section-title">Portfolio</h2>
                   <div class="animated-bar"></div>
                 </div>
@@ -200,62 +201,193 @@
                 <div class="col-12">
                   <ul class="list-inline filter-control" role="group" aria-label="Filter Control">
                     <li class="list-inline-item tab-active" data-filter="*">All</li>
-                    <li class="list-inline-item" data-filter=".brand">Brand</li>
-                    <li class="list-inline-item" data-filter=".design">Design</li>
-                    <li class="list-inline-item" data-filter=".photos">Photos</li>
+                    <li class="list-inline-item" data-filter=".code">Source code</li>
+                    <li class="list-inline-item" data-filter=".presentation">Presentation</li>
                   </ul>
                 </div>
               </div>
               <!-- Thumbnail list-->
               <div class="portfolio-grid row">
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design"><a class="portfolio-item" href="img/item-1.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-1.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Label Tag Mockup</h6><span class="content-more">More Info</span>
-                      </div>
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/visee.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/visee" target="_blank">More Info</a>
                     </div>
-                  </a></div>
+                  </div>
+                </div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/item-2.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-2.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">3D Bag Mockup</h6><span class="content-more">More Info</span>
-                      </div>
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/sentivi.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/sentivi" target="_blank">More Info</a>
                     </div>
-                  </a></div>
+                  </div>
+                </div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design"><a class="portfolio-item" href="img/item-3.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-3.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Modern Bag Design</h6><span class="content-more">More Info</span>
-                      </div>
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/graph-crdt.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/graph-crdt" target="_blank">More Info</a>
                     </div>
-                  </a></div>
+                  </div>
+                </div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="img/item-4.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-4.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Coffee Cup Design</h6><span class="content-more">More Info</span>
-                      </div>
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/offline-crohme.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/offline-crohme" target="_blank">More Info</a>
                     </div>
-                  </a></div>
+                  </div>
+                </div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="img/item-5.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-5.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">T-Shirt Design</h6><span class="content-more">More Info</span>
-                      </div>
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/vnondb-extractor.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/vnondb-extractor" target="_blank">More Info</a>
                     </div>
-                  </a></div>
+                  </div>
+                </div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/item-6.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-6.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Packaging Box Mockup</h6><span class="content-more">More Info</span>
-                      </div>
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/awsome-vietnamese-nlp.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/awsome-vietnamese-nlp" target="_blank">More Info</a>
                     </div>
-                  </a></div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/bertvi-sentiment.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/bertvi-sentiment" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/deepgen.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/deepgen" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/facemask.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/facemask" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/vsearch.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/vsearch" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/multi-mnist.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/multi-mnist" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 code">
+                  <div class="portfolio-wrapper">
+                    <img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/vndee/algo-templates.png" width="370px">
+                    <div class="item-content">
+                      <a href="https://github.com/vndee/algo-templates" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-1.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://docs.google.com/presentation/d/1CmVWi76qqDiqPaAs_MjcZl_qpi62gvZ_EYLiMa9-jrY/edit?usp=sharing" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-2.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://drive.google.com/file/d/1Ut_WV5_wbaeQFhZG4QXxmh5Ukbo5DqN5/view" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-3.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://drive.google.com/file/d/1Jcv5octZWr2GHJyKr-eptTijgzMQ9UwQ/view" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-4.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://drive.google.com/file/d/17wuWhIvAMIDUQbnNnZIgJacdZNu8TzSD/view" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-5.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://drive.google.com/file/d/1PUl8PCDBqgF4DK7y0ZG422xA4eHkRQ65/view" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-6.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://drive.google.com/file/d/1iL4TOtej52fvAodnEzczLn_od15glGDM/view" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-7.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://drive.google.com/file/d/1yYL4J1wScf-_rke4PfgO_97RsJg9h1UN/view" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 presentation">
+                  <div class="portfolio-wrapper">
+                    <img src="img/item-8.png" width="370px" height="230px">
+                    <div class="item-content">
+                      <a href="https://drive.google.com/file/d/15LwJNCZOdAvtbej60Vrj5xf0ZJA9WF5M/view" target="_blank">More Info</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
