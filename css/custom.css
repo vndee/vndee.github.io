@@ -43,3 +43,58 @@
 .github-card__meta .i {
   font-size: 16px;
 }
+
+/* Portfolio images: keep them responsive so they never overflow / clip
+   (they carry a fixed width="370" attribute for the desktop layout). */
+.portfolio-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Portfolio card metrics: stars + downloads */
+.repo-metrics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 2px;
+}
+
+.repo-metrics .stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: #d7dbd8;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 999px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.single-item:hover .repo-metrics .stat-pill {
+  transform: translateY(-2px);
+}
+
+.repo-metrics .stat-pill .st {
+  color: #f2c94c;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.repo-metrics .stat-pill.dl {
+  color: #06210f;
+  background: #28a745;
+  border-color: #28a745;
+}
+
+.repo-metrics .stat-pill.dl .ic {
+  font-weight: 700;
+}
